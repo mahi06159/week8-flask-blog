@@ -1,15 +1,1 @@
-{% extends "base.html" %}
-{% block content %}
 
-<h2>All Blog Posts</h2>
-
-{% for post in posts %}
-    <h3>{{ post.title }}</h3>
-    <p>{{ post.content }}</p>
-    <small>Posted on {{ post.timestamp }}</small>
-    <hr>
-{% else %}
-    <p>No posts yet.</p>
-{% endfor %}
-
-{% endblock %}
